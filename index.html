@@ -10,19 +10,32 @@
 <body>
     <div class="login-container">
         <h1>Login Form</h1>
-        <div>
-            <input type="number" placeholder="Input Your Valid Number">
+        <!-- form start -->
+       <form id="login-form">
+         <!-- input number field -->
+         <div>
+            <input id="number" type="number" placeholder="Input Your Valid Number" required>
         </div>
+       <!-- input password field -->
         <div>
-            <input type="password" placeholder="Input Your Password">
+            <input id="password" type="password" placeholder="Input Your Password" required>
         </div>
-        <button class="login-btn">Login</button>
+        <button type="submit" class="login-btn">Login</button>
+       </form>
+        <!-- form end -->
         <p>Forgotten password?</p>
         <h2>OR</h2>
        <div class="create-btn">
          <button>Create New Account</button>
        </div>
 
+      <!-- Error Message -->
+        <p id="error"></p>
+
     </div>
+
+    <!-- js link -->
+    <script src="/script.js"></script>
+
 </body>
 </html>
